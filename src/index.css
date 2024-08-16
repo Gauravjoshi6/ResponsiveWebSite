@@ -1,0 +1,831 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(41, 2, 78, 0.988);
+}
+
+/* NavBar */
+header {
+  margin-top: 30px;
+}
+#right {
+  margin-left: 70%;
+  margin-top: 20px;
+  width: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left .circle {
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.left img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.left h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  justify-content: end;
+  position: relative;
+  top: 20px;
+  left: 200px;
+}
+header {
+  display: flex;
+}
+#menu-toggle img {
+  height: 50px;
+}
+
+#right .id {
+  width: 9rem;
+}
+#right button {
+  width: 9rem;
+}
+.menu #right {
+  display: flex;
+}
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+  gap: 2%;
+  margin-top: 15px;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.nav-bar:hover {
+  color: red;
+}
+.menu select {
+  font-size: 16px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.menu option {
+  background-color: transparent;
+  color: black;
+}
+
+#login-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#login-button:hover {
+  background-color: #0056b3;
+}
+
+.removal-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+#remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#remove img {
+  height: 24px;
+}
+
+/* main */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
+  margin-left: 5%;
+}
+.main h1 {
+  font-size: 3.3rem;
+
+  font-weight: bold;
+}
+.main #span {
+  color: blueviolet;
+  border-bottom: 4px solid blueviolet;
+}
+.main p {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.59);
+}
+.Explores {
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.main button {
+  margin-left: 3%;
+  padding: 10px;
+  background-color: rgb(60, 60, 199);
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.main a {
+  text-decoration: none;
+  color: white;
+}
+.quantum {
+  background-color: rgba(151, 121, 180, 0.586);
+  /* border: 2px solid rgba(255, 255, 255, 0.2); */
+  backdrop-filter: blur(2000vh);
+  /* box-shadow: 0px 0px 0px 10px rgb(0 ,0,0,0.2); */
+  margin-top: 120px;
+  /* margin-left: 3%; */
+  /* width: 150vh; */
+  padding: 40px 0px 40px 0px;
+  border-radius: 10px;
+  height: 50%;
+  width: 80%;
+}
+.quantum #hello {
+  background-size: cover;
+  background-position: center;
+  height: 20%;
+  width: 85%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.quantum #Kon {
+  background-size: cover;
+  backdrop-filter: blur(100px);
+  height: 80%;
+  width: 60%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  background-size: cover;
+}
+
+.quantum .Small {
+  background-position: center;
+  background-color: rgba(151, 121, 180, 0.586);
+  display: flex;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  width: 15%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.quantum .circle {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: rgb(8, 193, 239);
+}
+
+#hello:hover {
+  transform: scale(1.1, 1.06);
+}
+
+#Kon:hover {
+  transform: scale(1.1);
+}
+
+.Chapter {
+  display: flex;
+  /* justify-content: center;
+  text-align: center; */
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(151, 121, 180, 0.586);
+  backdrop-filter: blur(100px);
+  padding: 10px;
+  border-radius: 15px;
+  width: 17%;
+  gap: 5px;
+}
+.Chapter .into {
+  height: 27%;
+  width: 14%;
+  border-radius: 50%;
+  color: #007bff;
+  background-color: #007bff;
+}
+.Chapter span {
+  color: white;
+}
+.Chatbot {
+  display: flex;
+  flex-direction: row;
+}
+
+/* How It Works */
+
+.count {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.count img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  background-color: rgb(86, 126, 237);
+  border-radius: 50%;
+  background-size: cover;
+  display: flex;
+}
+.Itworks {
+  margin-top: 100px;
+  width: 100%;
+  background-color: rgba(91, 51, 128, 0.218);
+  backdrop-filter: blur(100px);
+  margin-left: 5%;
+  padding: 40px 0px 40px 0px;
+  border-radius: 15px;
+  box-shadow: 3px rgba(49, 28, 69, 0.218);
+}
+
+.Itworks h3 {
+  font-weight: bold;
+}
+
+.up {
+  display: flex;
+}
+.Down {
+  display: flex;
+}
+.count .detail {
+  text-align: start;
+}
+.detail h5 {
+  font-weight: bold;
+}
+
+.Generator img {
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.Generator {
+  width: 20rem;
+  font-size: 1.2rem;
+}
+
+.Generator p {
+  color: rgb(193, 191, 188);
+  margin-top: 10px;
+}
+.aiBook {
+  display: flex;
+  /* justify-content: space-evenly; */
+  gap: 80px;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+.Generator h4 {
+  margin-top: 10px;
+}
+.Generator a {
+  text-decoration: none;
+}
+.write {
+  margin-left: 5%;
+  margin-top: 120px;
+}
+.Good {
+  padding: 30px 10px 20px 10px;
+  background-color: rgba(91, 51, 128, 0.218);
+  border-radius: 10px;
+}
+.write h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.Write-para p {
+  font-size: 1.2rem;
+}
+
+/* Video */
+
+.Video {
+  width: 90%;
+  height: 90vh;
+  margin-top: 90px;
+  margin-left: 5%;
+  padding: 50px;
+  background-color: rgba(91, 51, 128, 0.218);
+  backdrop-filter: blur(100px);
+}
+.Video iframe {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+/* What our */
+
+.User {
+  margin-left: 2vh;
+  margin-top: 80px;
+}
+.User h4 {
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+.What {
+  display: flex;
+  gap: 60px;
+}
+.What .Sarah {
+  background-color: rgba(91, 51, 128, 0.218);
+  backdrop-filter: blur(100px);
+  padding: 40px;
+}
+
+.Sarah h5 {
+  font-weight: bold;
+}
+.Sarah p {
+  font-size: 1.2rem;
+}
+
+.Updated {
+  background-color: rgba(91, 51, 128, 0.218);
+  backdrop-filter: blur(100px);
+  width: 99%;
+  margin-left: 2vh;
+  margin-top: 80px;
+  padding: 50px;
+}
+
+.Updated p {
+  font-size: 1.2rem;
+}
+
+.Updated h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.Email {
+  text-align: start;
+}
+
+.Email input {
+  padding: 8px;
+  width: 40vh;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+.Email button {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(86, 126, 237);
+  margin-top: 20px;
+  color: white;
+}
+
+.outline {
+  margin-top: 80px;
+  border-top: 0.1px solid rgb(80, 80, 79);
+  padding-bottom: 80px;
+}
+
+.outline h6 {
+  margin-top: 20px;
+}
+.outline a {
+  text-decoration: none;
+  color: rgba(173, 172, 172, 0.807);
+  margin-left: 20px;
+}
+
+.outline a:hover {
+  color: white;
+}
+
+/* Responsive Navbar */
+
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(41, 2, 78, 0.988);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .left {
+    margin-bottom: 10px;
+  }
+
+  #menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    margin-top: 10px;
+    margin-left: 80%;
+  }
+
+ ul li a:hover{
+   color:black
+ }
+
+  .menu.open {
+    display: flex;
+  }
+  #open {
+    display: flex;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    right: 0;
+    z-index: 10;
+    margin-left: calc(200% - 40px);
+    background-color: crimson;
+    padding: 40px;
+    flex-direction: column;
+    color: white;
+  }
+
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu a {
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+  }
+
+  .menu select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #login-button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media screen and(max-width: 991px) {
+  .left h3 {
+    font-size: 20px;
+  }
+
+  .left img {
+    height: 30px;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+  .open {
+    display: flex;
+  }
+
+  .Explores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .Explores h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .Explores p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+
+  .Explores button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    margin: 5px;
+  }
+
+  .Custom {
+    width: 100%;
+    margin-left: 80%;
+  }
+
+  .Chatbot {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.Small {
+  height: 20%;
+  width: 10%;
+}
+
+.Custom {
+  margin-top: 60px;
+  margin-left: 1%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.Custom img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  background-color: rgb(160, 69, 230);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.Custom h4 {
+  font-weight: bold;
+}
+
+.Chatbot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  gap: 60px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 991px) {
+  .Custom {
+    margin-left: 8%;
+    margin-top: 30px;
+  }
+
+  .Custom img {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+  }
+
+  .Custom h4 {
+    font-size: 1rem;
+  }
+  .nav-bar:hover {
+    color: black;
+  }
+  .Custom h6 {
+    font-size: 0.9rem;
+  }
+
+  .Chatbot {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 5%;
+    gap: 5%;
+  }
+
+  .quantum img {
+    height: 50px;
+    width: 100px;
+  }
+  .Write-para {
+    margin-left: 10%;
+  }
+
+  .aiBook {
+    margin-left: 30%;
+  }
+  .main {
+    margin-left: 15%;
+  }
+  .Itworks {
+    margin-left: 15%;
+    width: 100%;
+  }
+
+  .Video {
+    height: 70vh;
+    width: 90%;
+    margin-left: 15%;
+  }
+
+  .Completed {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Custom {
+    margin-top: 20px;
+  }
+  .Chapter .into {
+    height: 27%;
+    width: 4%;
+    border-radius: 50%;
+    color: #007bff;
+    background-color: #007bff;
+  }
+  .Custom img {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+  }
+
+  .Custom h4 {
+    font-size: 0.9rem;
+  }
+
+  .Custom h6 {
+    font-size: 0.8rem;
+  }
+  .Itworks {
+    margin-left: 10%;
+    width: 100%;
+  }
+  .up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Down {
+    display: flex;
+    flex-direction: column;
+  }
+  .Chatbot {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 15%;
+    gap: 100%;
+  }
+  .main {
+    margin-left: 20%;
+  }
+
+  .Video {
+    height: 70vh;
+    width: 90%;
+    margin-left: 15%;
+  }
+
+  .Write-para {
+    margin-left: 20%;
+  }
+
+  .aiBook {
+    margin-left: 25%;
+  }
+
+  .Completed {
+    margin-left: 6%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #right {
+    margin-left: 10%;
+    gap: 2%;
+  }
+
+  .Video {
+    height: 40vh;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .main {
+    margin-left: 30%;
+  }
+  .Itworks {
+    margin-left: 15%;
+  }
+
+  .Video {
+    margin-left: 20%;
+  }
+
+  .Itworks {
+    margin-left: 17%;
+  }
+
+  .Completed {
+    margin-left: 10%;
+  }
+
+  .left {
+    margin-left: 30%;
+  }
+  .menu-toggle {
+    position: relative;
+    top: 0;
+    right: 20px;
+  }
+}
